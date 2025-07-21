@@ -1,29 +1,43 @@
-# Telco Customer Intelligence 📊📉
+# Telco Customer Churn Prediction
 
-This project analyzes customer behavior in a telecom company to:
-- Predict churn
-- Segment users
-- Build smart retention strategies using recommendation systems
+## 💡 Problem Statement
+Predict whether a telecom customer will churn based on service usage, contract details, and demographics.
 
-### 🔍 Use Cases
-- Business analytics
-- Customer success strategy
-- Marketing optimization
+## 📊 Dataset
+- Source: IBM Telco Customer Churn dataset
+- Shape: ~7K rows, 21 columns
+- Target: `Churn`
 
-### 📁 Project Structure
-- `notebooks/`: Analysis & modeling notebooks
-- `data/`: Telco churn dataset
-- `src/`: Reusable code
-- `visuals/`: Visualizations and screenshots for reports
+## 🧰 Technologies Used
+- Python 3.12
+- Pandas, NumPy
+- Scikit-learn
+- Matplotlib, Seaborn
+- Jupyter Notebook
 
-### 🚀 Technologies
-- Python (Pandas, Scikit-learn, Matplotlib, Seaborn)
-- Jupyter Notebooks
-- Optional: Streamlit for dashboard, LangChain for GenAI integration
+## ⚙️ Workflow
+1. Data Cleaning & Encoding
+2. Exploratory Analysis
+3. Segmentation (Clustering)
+4. Model Training (Random Forest)
+5. Feature Importance Visualization
+6. Evaluation Metrics
 
-### 📊 Dataset
-[Telco Customer Churn - Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+## 🎯 Results
+- Accuracy: 79%
+- Key features: tenure, monthly charges, contract
+- Precision for churn class is lower → consider rebalancing
 
----
+## 📦 Outputs
+- `churn_rf_model.pkl`
+- `label_encoders.pkl`
+- Feature importance plots
 
-> Built as a real-world case study for churn prediction, segmentation, and user retention modeling.
+## 🔮 Future Work
+- Hyperparameter tuning
+- Handle class imbalance (SMOTE or class weights)
+- Deploy via Streamlit or Flask
+- Add SHAP explainability
+
+## 📝 Author
+Anuja Jagadde
